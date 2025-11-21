@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Точка равновесия</title>
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 20px;
+            max-width: 500px;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+        h1 {
+            text-align: center;
+            border-bottom: 1px solid #333;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+            font-size: 18px;
+            font-weight: normal;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .person {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed #333;
+        }
+        .person:last-child {
+            border-bottom: none;
+        }
+        .name {
+            font-size: 18px;
+            margin-bottom: 12px;
+            font-weight: bold;
+            display: block;
+            color: #ddd;
+        }
+        /* Плеер */
+        audio {
+            width: 100%;
+            height: 40px;
+            filter: invert(100%);
+            outline: none;
+        }
+        /* Картинка отзыва */
+        .review-img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            border: 1px solid #333;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ЗАГОЛОВОК -->
+    <h1>В конце любого пути<br>самое важное — это голоса тех,<br>кто шел рядом</h1>
+
+    <!-- 1. МАКСИМ -->
+    <div class="person">
+        <span class="name">Максим</span>
+        <audio controls src="maks.mp3"></audio>
+    </div>
+
+    <!-- 2. ДМИТРИЙ -->
+    <div class="person">
+        <span class="name">Дмитрий</span>
+        <audio controls src="dima.mp3"></audio>
+    </div>
+
+    <!-- 3. ВЛАДИМИР (Log) -->
+    <div class="person">
+        <span class="name">Владимир</span>
+        <audio controls src="volodyalog.mp3"></audio>
+    </div>
+
+    <!-- 4. АЛЕКСЕЙ (ЗАПОЛНИ САМА) -->
+    <div class="person">
+        <span class="name">Алексей</span>
+        <audio controls src="ВСТАВИТЬ_ИМЯ_ФАЙЛА.mp3"></audio>
+    </div>
+
+    <!-- 5. ОКСАНА (Картинка) -->
+    <div class="person">
+        <span class="name">Оксана</span>
+        <img class="review-img" src="oksana.png" alt="Отзыв">
+    </div>
+
+    <!-- 6. ВЛАДИМИР (PR) -->
+    <div class="person">
+        <span class="name">Владимир</span>
+        <audio controls src="volodyapr.m4a"></audio>
+    </div>
+
+</body>
+</html>
